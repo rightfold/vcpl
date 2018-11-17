@@ -1,0 +1,61 @@
+cabal-version: >= 1.10
+build-type: Simple
+
+name: vcpl
+version: 0.0.0.0
+
+library
+  hs-source-dirs:
+    src
+
+  exposed-modules:
+    Vcpl.Parse.Lex
+
+  default-language:
+    Haskell2010
+
+  ghc-options:
+    -Wall
+    -Wincomplete-record-updates
+    -Wincomplete-uni-patterns
+
+  default-extensions:
+    ApplicativeDo,
+    DerivingStrategies,
+    GADTs,
+    KindSignatures,
+    LambdaCase,
+    StrictData
+
+  build-depends:
+    array,
+    base,
+    bytestring,
+    lens
+
+test-suite test
+  type: exitcode-stdio-1.0
+
+  hs-source-dirs:
+    test
+
+  main-is:
+    Main.hs
+
+  default-language:
+    Haskell2010
+
+  ghc-options:
+    -Wall
+    -Wincomplete-record-updates
+    -Wincomplete-uni-patterns
+
+  default-extensions:
+    ApplicativeDo,
+    StrictData,
+    TypeApplications
+
+  build-depends:
+    base,
+    hspec,
+    vcpl

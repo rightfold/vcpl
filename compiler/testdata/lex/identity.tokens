@@ -1,0 +1,24 @@
+Right
+  [ KeywordIdentification
+  , KeywordDivision
+
+  , KeywordValue
+  , (Identifier "identity")
+
+  , KeywordType
+  , KeywordForall
+  , (Identifier "a")
+  , PunctuationPeriod
+  , (Identifier "a")
+  , PunctuationHyphenGreaterThan
+  , (Identifier "a")
+
+  , KeywordComputation
+  , KeywordDivision
+
+  , KeywordLambda
+  , (Identifier "a")
+  , PunctuationPeriod
+  , (Identifier "a")
+
+  , EOF ]
