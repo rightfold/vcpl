@@ -9,7 +9,9 @@ library
     src
 
   exposed-modules:
-    Vcpl.Parse.Lex
+    Vcpl.Parse.Lex,
+    Vcpl.Parse.Parse,
+    Vcpl.Syntax
 
   default-language:
     Haskell2010
@@ -21,11 +23,17 @@ library
 
   default-extensions:
     ApplicativeDo,
+    DataKinds,
     DerivingStrategies,
+    FlexibleInstances,
     GADTs,
     KindSignatures,
     LambdaCase,
-    StrictData
+    PatternSynonyms,
+    RankNTypes,
+    StandaloneDeriving,
+    StrictData,
+    TypeOperators
 
   build-depends:
     array,

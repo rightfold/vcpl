@@ -3,6 +3,7 @@
 , array
 , base
 , bytestring
+, happy
 , hspec
 , lens }:
 mkDerivation {
@@ -15,6 +16,7 @@ mkDerivation {
         array
         base
         bytestring
+        happy
         hspec
         lens
     ];
